@@ -146,11 +146,12 @@ main {
   background-color:var(--soft-violet);
   box-sizing: border-box;
 }
+.right-side * {
+  mix-blend-mode:multiply;
+  opacity:80%;
+}
 .photo-desktop {
   display: flex;
-  mix-blend-mode:luminosity;
-  filter: brightness(60%);
-  width: 100%;
 }
 .photo-mobile {
   display: none;
@@ -201,10 +202,7 @@ footer, footer * {
   }
   .photo-mobile {
     display: flex;
-    mix-blend-mode:luminosity;
-    filter: brightness(60%);
     width: 100%;
-    overflow: hidden;
   }
 
 }
